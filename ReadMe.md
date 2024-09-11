@@ -1,5 +1,4 @@
 # DeFi Kingdom Clone on Avalanche
-
 Welcome to the DeFi Kingdom clone project on the Avalanche CLI! This project replicates features from the original DeFi game, including Battling, Trading, and Exploring. It uses Solidity smart contracts to implement these features on an Avalanche EVM Subnet.
 
 ## Description
@@ -31,7 +30,7 @@ This project includes several smart contracts:
 
 2. **Create a New Subnet**:
    ```bash
-   avalanche subnet create mySubnet
+   avalanche subnet create SubnetMuskan
    ```
 
 3. **Select EVM Subnet Option**:
@@ -39,7 +38,7 @@ This project includes several smart contracts:
 
 4. **Deploy the Subnet**:
    ```bash
-   avalanche subnet deploy mySubnet
+   avalanche subnet deploy SubnetMuskan
    ```
 
 5. **View Subnet Details**:
@@ -65,11 +64,12 @@ This project includes several smart contracts:
 
 ### AdventuresQuest Contract
 - **Register**: `register()`
-- **Explore**: `explore(DungeonType dungeonType)`
-- **Get Explorer**: `getExplorer(address explorer)`
-- **Get Explorer Count**: `getExplorerCount()`
-- **Get Top Explorers**: `getTopExplorers(uint256 limit)`
-- **Get All Explorers**: `getAllExplorers()`
+- **Explore**: `explore((QuestType questType)
+- **Get Adventurer**: ` getAdventurer(address adventurer)`
+- **Get Adventurer Count**: `getAdventurerCount()`
+- **Get Top Adventurer**: `getTopExplorers(uint256 limit)`
+- **Get All Adventurer**: `getAllAdventurers()`
+
 
 ## Working
 
@@ -77,8 +77,7 @@ This project includes several smart contracts:
 
 2. **Deploy Vault Contract**: Use the ERC20 contract address as a parameter for the Vault contract constructor.
 
-3. **Deploy AdventuresQuest Contract**: Deploy the EpicBattle, Trade_Bazzar, and Explore_dungeon contracts in sequence.
-
+3. **Deploy AdventuresQuest Contract**: Deploy the AdventuresQuest contract, specifying any required initial parameters 
 
 ## Authors
 
